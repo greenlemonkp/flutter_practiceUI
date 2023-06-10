@@ -7,12 +7,33 @@ void main() {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+          backgroundColor: Colors.black,
+          body: Column(
+            children: [
+              Row(
+                children: [
+                  Column(
+                    children: [
+                      Text(
+                        "Hey Selena",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                      Text(
+                        "Welcome Back",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ],
+                  )
+                ],
+              )
+            ],
+          )),
     );
   }
 }
